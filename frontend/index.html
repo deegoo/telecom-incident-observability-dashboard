@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Telecom Incident Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <h1>Telecom Incident Dashboard</h1>
+
+    <div class="metrics">
+
+    <div class="card">
+        <h3>Total Incidents</h3>
+        <p id="total"></p>
+    </div>
+
+    <div class="card">
+        <h3>MTTR (min)</h3>
+        <p id="mttr"></p>
+    </div>
+
+    <div class="card">
+        <h3>P95 Resolution</h3>
+        <p id="p95"></p>
+    </div>
+
+    <div class="card">
+        <h3>SLA Compliance %</h3>
+        <p id="sla_compliance"></p>
+    </div>
+
+    <div class="card">
+        <h3>Critical Incidents</h3>
+        <p id="critical"></p>
+    </div>
+
+    <div class="card">
+        <h3>SLA Breach %</h3>
+        <p id="breach"></p>
+    </div>
+
+</div>
+
+<h2>Incident Distribution by Severity</h2>
+<canvas id="distributionChart"></canvas>
+
+<h2>Resolution Analysis</h2>
+<canvas id="resolutionChart"></canvas>
+
+<h2>SLA Compliance by Severity</h2>
+<canvas id="slaChart"></canvas>
+
+<h2>P95 Resolution by Severity</h2>
+<canvas id="p95Chart"></canvas>
+
+<h2>Daily Incident Trend</h2>
+<canvas id="trendChart"></canvas>
+
+<br>
+<button onclick="downloadReport()">Download PDF Report</button>
+
+    <script src="app.js"></script>
+</body>
+</html>

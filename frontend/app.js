@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:8000";
+const API_BASE = "";
 
 function renderCards(data) {
 
@@ -102,7 +102,7 @@ function downloadReport() {
 
 async function loadMetrics() {
     try {
-        const response = await fetch(`${API_BASE}/metrics`);
+        const response = await fetch(`/metrics`);
 
         console.log("Status:", response.status);
 
@@ -127,9 +127,7 @@ async function loadMetrics() {
 async function loadTrendChart() {
 
     const response =
-        await fetch(
-            `${API_BASE}/metrics/daily`
-        );
+        await fetch(`/metrics/daily`);
 
     const data =
         await response.json();

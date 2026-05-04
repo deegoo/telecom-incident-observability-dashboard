@@ -1,0 +1,8 @@
+#Gerar incidentes para análise#
+python generate_incidents.py
+
+#Carrega a build do docker#
+docker compose up --build
+
+#Carrega os incidentes criados#
+docker compose exec api python -m src/db/load_csv

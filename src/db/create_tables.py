@@ -14,9 +14,9 @@ if __name__ == "__main__":
 # CONFIG
 USER = "postgres"
 PASSWORD = "1406"
-HOST = "localhost"
+HOST = "db"
 PORT = "5432"
-DATABASE = "telecom_incidents"
+DATABASE = "telecom"
 
 engine = create_engine(
     f"postgresql+psycopg2://{USER}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}"

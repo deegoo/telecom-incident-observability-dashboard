@@ -9,9 +9,9 @@ import os
 # =============================
 USER = "postgres"
 PASSWORD = "1406"
-HOST = "localhost"
+HOST = "db"
 PORT = "5432"
-DATABASE = "telecom_incidents"
+DATABASE = "telecom"
 
 BASE_DIR = os.path.dirname(
     os.path.dirname(

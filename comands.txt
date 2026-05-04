@@ -1,13 +1,13 @@
-#Gerar incidentes para análise#
+#1º passo: Gerar incidentes para análise#
 No bash: python generate_incidents.py
 
-#Carrega a build do docker#
-Em outro terminal: docker compose up --build
+#2º passo: Carrega a build do docker#
+Abrir outro terminal: docker compose up --build
 
-#Carrega os incidentes criados#
+#3º passo: Carrega os incidentes criados#
 No bash: docker compose exec api python -m src.db.load_csv
 
-#Abrir a página com os dados carregados#
+#4º passo: Abrir a página com os dados carregados#
 No terminal do docker, ir na opção portas, na linha da "porta 8000", ir na coluna 
 "Endereço Encaminhado e clicar na opção "Abrir no navegador".
 
